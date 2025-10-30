@@ -277,14 +277,14 @@ Système d'alertes critiques :
 
 ### 5.2 Surveillance des journaux avec Cloud Monitoring / SIEM
 
-- Centralisation des traces d'audit : Agrégation des logs Cloud SQL, KMS, IAM dans un SIEM dédié santé  
+- Centralisation des traces d'audit : Agrégation des logs Cloud SQL, KMS, IAM dans un SIEM dédié santé  (Blumira , IBM QRadar ... ) 
 - Conservation 3 ans des journaux d'accès aux données sensibles  
 - Détection automatique des comportements anormaux  
 
 **Plan de réponse aux incidents :**  
 
 - Révocation d'urgence CMEK : Procédure de blocage immédiat en cas de compromission  
-- Isolation forensique : Préservation des preuves pour investigation  
+- Isolation forensique : Préservation des preuves pour investigation  ("mise de côté” le système compromis
 - Notification CNIL : Processus de déclaration sous 72h si nécessaire  
 
 ### 5.3 Documentation de conformité HDS
