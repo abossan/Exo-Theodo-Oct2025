@@ -7,7 +7,7 @@ module "postgres_hds" {
   zone                = "europe-west1-b"
   
   # 🔐 HDS - Configuration de sécurité
-  db_tier              = "db-custom-2-7680"
+  db_tier              = "db-custom-2-7680"  #nstance PostgreSQL avec 2 CPU virtuels et 7,5 Go de RAM.
   disk_size            = 50
   kms_location         = "europe-west1"
   audit_logs_location  = "EU"
