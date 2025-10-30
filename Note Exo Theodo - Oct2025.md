@@ -164,7 +164,28 @@ gcloud kms keys create my-key --location=global --keyring=my-key-ring --purpose=
 Créer un secret avec un mot de passe sécurisé :  
 echo -n "MotDePasseTresFort123!" | gcloud secrets create db_password --data-file=-  
 
-## 3.5 Déploiement avec Terraform
+## 3.5 Création du Buckets pour les fichiers terraform r
+
+
+export PROJECT_ID="mon-projet-gcp"
+export TFSTATE_BUCKET="${PROJECT_ID}-tfstate"
+export TFSTATE_LOCATION="europe-west1" 
+
+gcloud storage buckets create gs://${TFSTATE_BUCKET} \
+  --project=${PROJECT_ID} \
+  --location=${TFSTATE_LOCATION} \
+  --uniform-bucket-level-access \
+  --versioning \
+  --public-access-prevention
+
+--uniform-bucket-level-access : simplifie la gestion IAM (obligatoire dans beaucoup d’orgas).
+
+--versioning : garde un historique des versions du terraform.tfstate → indispensable pour restaurer en cas d’erreur.
+
+--public-access-prevention : empêche toute exposition publique accidentelle.
+
+
+## 3.6 Déploiement avec Terraform
 
 Initialiser Terraform :  
 terraform init  
@@ -282,4 +303,4 @@ Système d'alertes critiques :
 - Traçabilité complète des accès et modifications  
 - Procédures de purge sécurisée des données  
 
-*Document généré avec l'assistance Claude (version entreprise) garantissant la non-réutilisation des données pour l'entraînement.*  
+*Document avec correction d'ortigographe lié à  l'assistance Claude (version entreprise) garantissant la non-réutilisation des données pour l'entraînement.*  
