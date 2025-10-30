@@ -24,13 +24,13 @@
 - **Transparence juridique** : Déclarer l'application potentielle du CLOUD Act américain sur GCP
 - **Résidence des données** : Activer les contraintes d'organisation GCP pour limiter géographiquement les ressources
 
-### 1.2 Chiffrement
+### 1.2 Chiffrement 
 - **Chiffrement au repos** : Obligatoire pour toutes les données
 - **Chiffrement en transit** : SSL/TLS obligatoire
 - **Gestion des clés** : Support CMEK (Customer-Managed Encryption Keys)
 
 ### 1.3 Disponibilité & Continuité
-- **RPO/RTO définis** : Objectifs de récupération documentés
+- **RPO/RTO définis** : Objectifs de récupération documentés  (Recovery Point Objective)& (Recovery Time Objective)
 - **Sauvegardes automatiques** : Minimum quotidiennes
 - **PITR** : Point-In-Time Recovery activé
 - **Plan de Reprise d'Activité (PRA)**
