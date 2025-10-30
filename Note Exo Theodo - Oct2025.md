@@ -83,9 +83,9 @@
 
 **Écartement des solutions alternatives :**
 
-- **AlloyDB for PostgreSQL** : "Coût prohibitif" et "Surpuissant et trop cher pour mon use case"
+- **AlloyDB for PostgreSQL** : "Coût prohibitif" et "Surpuissant et trop cher pour mon use case" #PostgreSQL managé haute performance avec moteur optimisé par Google	Performance, résilience, IA
 - **Bare Metal Solution** : Hors GCP et coût prohibitif (5,000€/mois MINIMUM vs 50€ Cloud SQL)
-
+- **Cloud Spanner** : "❌ Non certifié directement"  Base NewSQL distribuée, propriétaire Google	Scalabilité horizontale mondiale, cohérence globale
 
 **Comparatif des solutions :**
 
