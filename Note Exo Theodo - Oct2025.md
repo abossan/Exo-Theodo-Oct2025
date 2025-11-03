@@ -303,4 +303,4 @@ Système d'alertes critiques :
 - Traçabilité complète des accès et modifications  
 - Procédures de purge sécurisée des données  
 
-*Document avec correction d'ortigographe lié à  l'assistance Claude (version entreprise) garantissant la non-réutilisation des données pour l'entraînement.*  
+*Document avec correction d'ortographe lié à  l'assistance Claude (version entreprise) garantissant la non-réutilisation des données pour l'entraînement.*  
